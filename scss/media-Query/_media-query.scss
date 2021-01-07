@@ -1,0 +1,49 @@
+// extra small: 575px
+//small device: 576px to 767px
+// medium devie: 768px to 991px
+// large device: 992px to 1199px
+// extra large device: 1200px
+@media only screen and(max-width:575px) {
+    .header__area {
+        .header__flex___container {
+            flex-direction: column;
+        }
+        .header__left {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header__right {
+            width: 100%;
+            .right__bottom {
+                text-align: center;
+            }
+            ul {
+                li {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    .today {
+        .today__left {
+            h2 {
+                font-size: 16px;
+            }
+        }
+        .today__right {
+            h3 {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .service {
+        .service__grid__container {
+            display: grid;
+            grid-template-columns: auto;
+            grid-row-gap: 20px;
+            justify-content: space-evenly;
+        }
+    }
+}
