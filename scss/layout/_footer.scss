@@ -1,0 +1,71 @@
+.footer__area {
+    background-color: #351a0a;
+    padding: 50px 0 20px 0;
+    .footer__flex__container {
+        display: flex;
+        justify-content: space-between;
+        .footer__child {
+            width: 230px;
+            h3 {
+                font-size: 18px;
+                text-transform: capitalize;
+                color: #ffffff;
+                margin-bottom: 25px;
+            }
+            address {
+                color: #ffffff;
+            }
+        }
+    }
+}
+.quick__links {
+    ul {
+        li {
+            a {
+                color: #ffffff;
+            }
+        }
+    }
+    .links__hr {
+        background-color:#ffffff;
+        margin: 5px 0;
+    }
+}
+.blog {
+    color: #ffffff;
+    h4 {
+        font-size: 16px;
+    }
+    span {
+        font-size: 12px;
+    }
+    p {
+        font-size: 14px;
+    }
+    a {
+        float: right;
+        font-size: 14px;
+        color: #ffffff;
+    }
+}
+.newslatter {
+    input[type="text"], input[type="email"]{
+        width: 100%;
+        padding: 5px;
+        border-radius: 8px;
+        border: 1px solid #ffffff;
+        margin-bottom: 10px;
+        background-color: transparent;
+        &::placeholder {
+            color: #f2f2f2;
+        }
+    }
+    button {
+        background-color: #190a02;
+        border: 1px solid #ffffff;
+        border-radius: 8px;
+        padding: 5px;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+}

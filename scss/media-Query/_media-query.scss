@@ -39,11 +39,45 @@
     }
 
     .service {
+        padding: 40px 0;
         .service__grid__container {
             display: grid;
             grid-template-columns: auto;
             grid-row-gap: 20px;
             justify-content: space-evenly;
+        }
+    }
+    .indonectetus {
+        padding-bottom: 40px;
+        .indonectetus__heading {
+            &::after {
+                width: 140px;
+                top: 12px;
+                height: 2px;
+
+            }
+            &::before {
+                width: 140px;
+                top: 12px;
+                height: 2px;
+
+            }   
+            h3 {
+                font-size: 18px;
+            }
+        }
+        .indonectetus__grid__container {
+            grid-template-columns: 300px;
+            justify-content: space-evenly;
+        }
+    }
+
+    .footer__area {
+        .footer__grid__container {
+            display: grid;
+            grid-template-columns: auto;
+            justify-content: space-evenly;
+            row-gap: 20px;
         }
     }
 }
