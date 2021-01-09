@@ -50,20 +50,19 @@
     .indonectetus {
         padding-bottom: 40px;
         .indonectetus__heading {
-            &::after {
-                width: 140px;
-                top: 12px;
-                height: 2px;
-
-            }
-            &::before {
-                width: 140px;
-                top: 12px;
-                height: 2px;
-
-            }   
-            h3 {
+            .indonectetus__heading--relative  {
                 font-size: 18px;
+                &::after {
+                    width: 140px;
+                    top: 12px;
+                    height: 2px;
+    
+                }
+                &::before {
+                    width: 140px;
+                    top: 12px;
+                    height: 2px;
+                } 
             }
         }
         .indonectetus__grid__container {

@@ -225,31 +225,32 @@ h1, h2, h3, h4, h5, h6 {
 
 .indonectetus .indonectetus__heading {
   text-align: center;
+}
+
+.indonectetus .indonectetus__heading .indonectetus__heading--relative {
   position: relative;
-}
-
-.indonectetus .indonectetus__heading::after {
-  position: absolute;
-  content: "";
-  width: 420px;
-  height: 3px;
-  background-color: black;
-  top: 18px;
-  left: 0;
-}
-
-.indonectetus .indonectetus__heading::before {
-  position: absolute;
-  content: "";
-  width: 420px;
-  height: 3px;
-  background-color: black;
-  top: 18px;
-  right: 0;
-}
-
-.indonectetus .indonectetus__heading h3 {
   font-size: 24px;
+  display: inline-block;
+}
+
+.indonectetus .indonectetus__heading .indonectetus__heading--relative::after {
+  position: absolute;
+  content: "";
+  width: 420px;
+  height: 3px;
+  background-color: black;
+  top: 18px;
+  left: calc(100% + 23px);
+}
+
+.indonectetus .indonectetus__heading .indonectetus__heading--relative::before {
+  position: absolute;
+  content: "";
+  width: 420px;
+  height: 3px;
+  background-color: black;
+  top: 18px;
+  right: calc(100% + 23px);
 }
 
 .indonectetus__grid__container {
@@ -457,18 +458,18 @@ h1, h2, h3, h4, h5, h6 {
   .indonectetus {
     padding-bottom: 40px;
   }
-  .indonectetus .indonectetus__heading::after {
-    width: 140px;
-    top: 12px;
-    height: 2px;
-  }
-  .indonectetus .indonectetus__heading::before {
-    width: 140px;
-    top: 12px;
-    height: 2px;
-  }
-  .indonectetus .indonectetus__heading h3 {
+  .indonectetus .indonectetus__heading .indonectetus__heading--relative {
     font-size: 18px;
+  }
+  .indonectetus .indonectetus__heading .indonectetus__heading--relative::after {
+    width: 140px;
+    top: 12px;
+    height: 2px;
+  }
+  .indonectetus .indonectetus__heading .indonectetus__heading--relative::before {
+    width: 140px;
+    top: 12px;
+    height: 2px;
   }
   .indonectetus .indonectetus__grid__container {
     -ms-grid-columns: 300px;

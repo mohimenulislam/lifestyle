@@ -2,28 +2,30 @@
     padding-bottom: 80px;
     .indonectetus__heading {
         text-align: center;
-        position: relative;
-        &::after {
-            position: absolute;
-            content: "";
-            width: 420px;
-            height: 3px;
-            background-color: black;
-            top: 18px;
-            left: 0;
-        }
-        &::before {
-            position: absolute;
-            content: "";
-            width: 420px;
-            height: 3px;
-            background-color: black;
-            top: 18px;
-            right: 0;
-        }
-        h3 {
+        .indonectetus__heading--relative  {
+            position: relative;
             font-size: 24px;
+            display: inline-block;
+            &::after {
+                position: absolute;
+                content: "";
+                width: 420px;
+                height: 3px;
+                background-color: black;
+                top: 18px;
+                left: calc(100% + 23px);
+            }
+            &::before {
+                position: absolute;
+                content: "";
+                width: 420px;
+                height: 3px;
+                background-color: black;
+                top: 18px;
+                right: calc(100% + 23px);
+            }
         }
+        
     }
 }
 
